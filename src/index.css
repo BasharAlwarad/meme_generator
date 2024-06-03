@@ -1,3 +1,76 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.App {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.first-image {
+	width: 400px;
+	border: solid 1px grey;
+	height: 400px;
+	object-fit: contain;
+	margin: 1rem;
+}
+
+.top {
+	position: absolute;
+	top: 1%;
+	width: 100%;
+}
+.bottom {
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+/* WHYYY??????????????????????????????????????? */
+
+.meme-container {
+	position: relative;
+	width: max-content;
+	overflow-wrap: break-word;
+	/* border: solid 3px green; */
+	margin: 2rem auto;
+}
+
+p {
+	/* border: solid 1px green; */
+	font-weight: bold;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+	-webkit-text-stroke: 1px black;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* BONUS */
+
+.images-container {
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem auto;
+	/* border: 2px solid green; */
+	justify-content: center;
+}
+
+.one-image-container > img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border: solid 1px grey;
+	margin: 5px;
+}
+
+.one-image-container > img:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.one-image-container > img:active {
+	border: solid 2px blue;
+}
